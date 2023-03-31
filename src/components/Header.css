@@ -1,5 +1,11 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin:1rem 5rem 0 5rem
+}
 .header-links{
     list-style: none;
     display:flex;
-    gap:10px;
+    font-size:1.25rem;
+    gap:3rem
 }
