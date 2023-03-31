@@ -1,11 +1,27 @@
+@font-face{
+    font-family:'spumoni';
+    src:url('./fonts/Spumoni.otf');
+}
+
 .header{
     display:flex;
     justify-content: space-between;
-    margin:1rem 5rem 0 5rem
+    padding:0 5rem 0 3rem;
+    background-color: rgb(102, 10, 10);
 }
 .header-links{
     list-style: none;
     display:flex;
     font-size:1.25rem;
-    gap:3rem
+    gap:3rem;
+    align-items: center;
+    color:whitesmoke;
+}
+
+
+.company-name{
+    font-family:'spumoni';
+    font-weight:100;
+    font-size:50px;
+    color:whitesmoke;
 }
