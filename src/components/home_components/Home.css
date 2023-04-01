@@ -1,5 +1,4 @@
 .photo-div{
-    border:2px solid rgb(207, 197, 197);
     height:700px;
     display:flex;
     justify-content: center;
@@ -8,18 +7,19 @@
 }
 
 
-.m-Left{
-    color:whitesmoke;
-    font-size:100px
-}
-
-.m-Right{
-    height:600px;
-    width:400px;
-    
-}
-.m-Right img{
-    height:600px;
-    width:400px;
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/dalmation.png");
+    height:100%;
+    width:100%;
+    padding:20px 0 0 0;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
 
 }
+
+.hero-text{
+    color:whitesmoke
+}
+

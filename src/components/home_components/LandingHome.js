@@ -4,12 +4,12 @@ import './Home.css'
 function LandingHome(){
     return(
         <div className="photo-div">
-            <div className="m-Left" >
-                <h3>It's Up To The Dogs</h3>
-                <buttons>Shop Now!</buttons>
-            </div>
-            <div className="m-Right">
-                <img src={require('./images/dalmation-pup.jpg')} alt="dalmation pup" />
+            <div className="hero-image">
+                <div className="hero-text">
+                    <h1>101 Dalmations</h1>
+                    <p></p>
+                    <button>Shop Now</button>
+                </div>
             </div>
         </div>
     )
