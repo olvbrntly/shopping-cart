@@ -1,10 +1,10 @@
 import React from "react";
 
-function MainInfo(){
+function LandingInfo(){
     return(
         <div>
             this is main info
         </div>
     )
 }
-export default MainInfo
+export default LandingInfo

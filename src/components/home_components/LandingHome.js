@@ -1,8 +1,7 @@
 import React from "react";
 import './Home.css'
-//import {dalmation} from './images/dalmation.png'
 
-function MainHome(){
+function LandingHome(){
     return(
         <div className="photo-div">
             <div className="m-Left" >
@@ -15,4 +14,4 @@ function MainHome(){
         </div>
     )
 }
-export default MainHome
+export default LandingHome
