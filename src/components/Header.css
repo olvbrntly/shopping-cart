@@ -7,15 +7,16 @@
     display:flex;
     justify-content: space-between;
     padding:0 5rem 0 3rem;
-    background-color: rgb(102, 10, 10);
 }
 .header-links{
     list-style: none;
     display:flex;
-    font-size:1.25rem;
+    font-size:25px;
     gap:3rem;
     align-items: center;
     color:whitesmoke;
+    font-family:'spumoni';
+    font-weight:100;
 }
 
 
