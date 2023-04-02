@@ -6,8 +6,8 @@ function LandingHome(){
         <div className="photo-div">
             <div className="hero-image">
                 <div className="hero-text">
-                    <h1>101 Dalmations</h1>
-                    <p></p>
+                    <h1>heading</h1>
+                    <p>description</p>
                     <button>Shop Now</button>
                 </div>
             </div>

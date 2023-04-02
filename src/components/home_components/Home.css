@@ -8,7 +8,7 @@
 
 
 .hero-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/dalmation.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/puppy.png");
     height:100%;
     width:100%;
     padding:20px 0 0 0;
