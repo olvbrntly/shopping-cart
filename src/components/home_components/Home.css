@@ -1,6 +1,6 @@
 @font-face{
     font-family:'spumoni';
-    src:url('/home/olive/repos/shopping-cart/src/components//fonts/Spumoni.otf');
+    src:url('../fonts/Spumoni.otf');
 }
 
 .photo-div{
