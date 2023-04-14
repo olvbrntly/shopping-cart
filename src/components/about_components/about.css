@@ -1,0 +1,22 @@
+@font-face{
+    font-family:'spumoni';
+    src:url('../fonts/Spumoni.otf');
+}
+
+.about-story{
+    color:whitesmoke;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 25% 0 25%;
+    font-size: 20px;
+}
+
+.about-story > h1{
+    font-family:'spumoni';
+    font-weight:100;
+    font-size:60px;
+    text-decoration: overline;
+    margin-bottom: 0;
+}
