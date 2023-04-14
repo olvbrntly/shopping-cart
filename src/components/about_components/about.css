@@ -3,20 +3,48 @@
     src:url('../fonts/Spumoni.otf');
 }
 
-.about-story{
+/* ---------- ABOUT SECTION ---------- */
+
+.about-story, .about-mailing{
     color:whitesmoke;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0 25% 0 25%;
+    margin:100px 25% 100px 25%;
     font-size: 20px;
 }
 
-.about-story > h1{
+.about-story > h1, .about-mailing > h1{
     font-family:'spumoni';
     font-weight:100;
     font-size:60px;
     text-decoration: overline;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
+
+/* ---------- MAILING LIST SECTION ---------- */
+
+form{
+    color:whitesmoke;
+    display:flex;
+    flex-direction: column;
+    width:700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-element{
+    display:flex;
+    gap:10px;
+    margin-bottom: 10px;
+}
+
+.form-element > input{
+    width:300px;
+}
+
+.email{
+    margin-left: 50px;
+}
+
