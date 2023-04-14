@@ -5,7 +5,7 @@
 
 /* ---------- ABOUT SECTION ---------- */
 
-.about-story, .about-mailing{
+.about-story, .about-mailing, .about-contact{
     color:whitesmoke;
     display:flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     font-size: 20px;
 }
 
-.about-story > h1, .about-mailing > h1{
+.about-story > h1, .about-mailing > h1, .about-contact > h1{
     font-family:'spumoni';
     font-weight:100;
     font-size:60px;
@@ -24,15 +24,6 @@
 }
 
 /* ---------- MAILING LIST SECTION ---------- */
-
-form{
-    color:whitesmoke;
-    display:flex;
-    flex-direction: column;
-    width:700px;
-    justify-content: center;
-    align-items: center;
-}
 
 .form-element{
     display:flex;
@@ -48,3 +39,4 @@ form{
     margin-left: 50px;
 }
 
+/* ---------- CONTACT INFO SECTION ----------- */
