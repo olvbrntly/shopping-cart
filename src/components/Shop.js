@@ -1,5 +1,6 @@
 import React from "react";
 import Products from "./shop_components/Products";
+import './shop_components/Shop.css'
 
 function Shop(){
 
@@ -8,19 +9,19 @@ function Shop(){
         {
             id:1,
             name:'banana-pjs',
-            description:'banana print puppy pajamas',
+            description:'Banana Print Pajamas',
             price:'$20',
         },
         {
             id:2,
             name:'chicken-toy',
-            description:'chicken plush chew toy',
+            description:'Chicken Plush Chew Toy',
             price:'$7',
         },
         {
             id:3,
             name:'collar-bow',
-            description:'cute bow collar accessory',
+            description:'Bow Collar Accessory',
             price:'$4',
         }
     ]

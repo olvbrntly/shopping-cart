@@ -4,7 +4,7 @@ import './Shop.css'
 
 function Products({description, price, name}){
     return(
-        <div>
+        <div className="shop-products">
            
              <img className="product-img" src={require(`./products_images/${name}.jpg`)} alt={name}/>
          
