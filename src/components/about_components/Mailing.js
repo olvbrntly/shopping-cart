@@ -24,7 +24,7 @@ function Mailing(){
                 </div>
 
 
-                <button>Submit!</button>
+                <button className="mailing-submit">Submit!</button>
             </div>
         </div>
     )

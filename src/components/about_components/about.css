@@ -39,4 +39,25 @@
     margin-left: 50px;
 }
 
+.mailing-submit{
+    background-color: whitesmoke;
+    border:none;
+    color:rgb(102, 10, 10);
+    padding:8px 15px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:17px;
+    border-radius:10px;
+    margin-top:0;
+}
+
+.mailing-submit:hover {background-color: rgb(207, 206, 206)}
+
+.mailing-submit:active {
+  background-color: rgb(207, 206, 206);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /* ---------- CONTACT INFO SECTION ----------- */
