@@ -22,7 +22,7 @@ function Shop(){
             id:3,
             name:'winter-coat',
             description:'Winter Coat',
-            price:'$4',
+            price:'$20',
         },
         {
             id:4,
