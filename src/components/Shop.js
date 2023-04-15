@@ -14,16 +14,34 @@ function Shop(){
         },
         {
             id:2,
+            name:'collar-bow',
+            description:'Bow Collar Accessory',
+            price:'$4',
+        },
+        {
+            id:4,
             name:'chicken-toy',
             description:'Chicken Plush Chew Toy',
             price:'$7',
         },
         {
-            id:3,
-            name:'collar-bow',
-            description:'Bow Collar Accessory',
-            price:'$4',
-        }
+            id:5,
+            name:'elephant-toy',
+            description:'Elephant Plush Chew Toy',
+            price:'$7',
+        },
+        {
+            id:6,
+            name:'food-toy-bundle',
+            description:'Food Toy Bundle',
+            price:'$12',
+        },
+        {
+            id:7,
+            name:'dog-food',
+            description:'Premium Organic Food',
+            price:'$15',
+        },
     ]
 
 
