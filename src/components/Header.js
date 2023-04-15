@@ -14,16 +14,16 @@ function Header(){
             </Link>
             <ul className="header-links">
                 <Link to="/" style={navStyle}>
-                    <li className="header-links">Home</li>
+                    <li className="header-links h">Home</li>
                 </Link>
                 <Link to={'/shop'} style={navStyle}>
-                    <li className="header-links">Shop</li>
+                    <li className="header-links h">Shop</li>
                 </Link>
                 <Link to={'/about'} style={navStyle}>
-                    <li className="header-links">About</li>
+                    <li className="header-links h">About</li>
                 </Link>
                 <Link to={'./cart'} style={navStyle}>
-                    <li className="header-links">Cart</li>
+                    <li className="header-links h">Cart</li>
                 </Link>
             </ul>
         </div>
