@@ -19,6 +19,12 @@ function Shop(){
             price:'$4',
         },
         {
+            id:3,
+            name:'winter-coat',
+            description:'Winter Coat',
+            price:'$4',
+        },
+        {
             id:4,
             name:'chicken-toy',
             description:'Chicken Plush Chew Toy',
@@ -40,10 +46,21 @@ function Shop(){
             id:7,
             name:'dog-food',
             description:'Premium Organic Food',
+            price:'$25',
+        },
+        {
+            id:8,
+            name:'treats',
+            description:'Treats Bundle',
             price:'$15',
         },
+        {
+            id:9,
+            name:'leash',
+            description:'10ft Extender Leash',
+            price:'$8',
+        },
     ]
-
 
 
     return(
