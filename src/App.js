@@ -13,9 +13,10 @@ import Cart from './components/Cart';
 
 
 function App() {
-
+  let initialCartItems = [];
   const [cartOpen, setCartOpen] = useState(false)
-
+  const [cartItems, setCartItems] = useState(initialCartItems)
+  
   function onCartClick(){
     alert('cart was clicked!');
     setCartOpen(!cartOpen);
@@ -25,6 +26,10 @@ function App() {
     alert('you clicked outside of the cart!')
     setCartOpen(false)
   }
+
+  function addToCart(){
+    alert('add to cart!')
+  }
   return (
 
     <Router>
@@ -33,7 +38,7 @@ function App() {
         <Routes>
           <Route path="/" Component={Home}/>
           <Route path="/about" Component={About}/>
-          <Route path="/shop" Component={Shop}/>
+          <Route path="/shop" element={<Shop addToCart={addToCart} />}/>
         </Routes>
         {cartOpen && <Cart clickOutsideOfCart={clickOutsideOfCart}/>}
       </div>

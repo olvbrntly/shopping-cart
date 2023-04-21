@@ -2,7 +2,7 @@ import React from "react";
 import Products from "./shop_components/Products";
 import './shop_components/Shop.css'
 
-function Shop(){
+function Shop({addToCart}){
 
     let products = [
         
@@ -67,7 +67,7 @@ function Shop(){
         <div className="product-container">
            {products.map(p =>(
             <div key={p.id}>
-                <Products description={p.description} price={p.price}  name={p.name}/>
+                <Products description={p.description} price={p.price}  name={p.name} addToCart={addToCart}/>
             </div>
            )
            )}
