@@ -20,7 +20,7 @@ function App() {
     setCartOpen(!cartOpen);
   }
   return (
-    <div>
+
     <Router>
       <div className="App">
         <Header onClick={onCartClick}/>
@@ -29,10 +29,11 @@ function App() {
           <Route path="/about" Component={About}/>
           <Route path="/shop" Component={Shop}/>
         </Routes>
+        {cartOpen && <Cart/>}
       </div>
     </Router>
-    {cartOpen && <Cart/>}
-    </div>
+    
+
   );
 }
 
