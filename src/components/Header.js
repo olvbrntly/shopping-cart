@@ -2,7 +2,7 @@ import React from "react";
 import './Header.css'
 import {Link} from 'react-router-dom'
 
-function Header(){
+function Header({onClick}){
 
     const navStyle = {
         textDecoration: 'none',
@@ -22,9 +22,9 @@ function Header(){
                 <Link to={'/about'} style={navStyle}>
                     <li className="header-links h">About</li>
                 </Link>
-                <Link to={'./cart'} style={navStyle}>
-                    <li className="header-links h">Cart</li>
-                </Link>
+                
+                    <li className="header-links h" onClick={onClick}>Cart</li>
+        
             </ul>
         </div>
     )
