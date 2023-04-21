@@ -1,0 +1,11 @@
+.cart-slide-out{
+    position:absolute;
+    background-color: black;
+    color:white;
+    height:100%;
+    z-index:9;
+    width:400px;
+    top: 0;
+    right:0;
+
+}
