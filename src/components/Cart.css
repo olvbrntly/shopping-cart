@@ -1,11 +1,21 @@
 .cart-slide-out{
     position:absolute;
-    background-color: black;
-    color:white;
+    background-color: whitesmoke;
+    color: rgb(102, 10, 10);;
     height:100%;
     z-index:9;
-    width:400px;
+    width:30%;
     top: 0;
     right:0;
+}
 
+.other-part{
+    position:absolute;
+    background-color: whitesmoke;
+    height:100%;
+    z-index:9;
+    width:70%;
+    opacity: 40%;
+    top: 0;
+    left:0;
 }
