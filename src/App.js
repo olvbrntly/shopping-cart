@@ -12,10 +12,14 @@ import About from './components/About';
 
 
 function App() {
+
+  function onCartClick(){
+    alert('cart was clicked!');
+  }
   return (
     <Router>
       <div className="App">
-        <Header/>
+        <Header onClick={onCartClick}/>
         <Routes>
           <Route path="/" Component={Home}/>
           <Route path="/about" Component={About}/>
