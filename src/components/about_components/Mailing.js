@@ -9,17 +9,17 @@ function Mailing(){
             <p>Stay up to date with product offerings and sales!</p>
             <div>
                 <div className="form-element">
-                    <label for="fname">First Name:</label>
+                    <label htmlFor="fname">First Name:</label>
                     <input name="fname"/>
                 </div>
 
                 <div className="form-element">
-                    <label for="lname">Last Name:</label>
+                    <label htmlFor="lname">Last Name:</label>
                     <input name="lname"/>
                 </div>
 
                 <div className="form-element">
-                    <label className="email" for="email">Email:</label>
+                    <label className="email" htmlFor="email">Email:</label>
                     <input name="email"/>
                 </div>
 
