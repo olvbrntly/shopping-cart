@@ -10,8 +10,6 @@ import Shop from './components/Shop';
 import About from './components/About';
 import Cart from './components/Cart';
 
-
-
 function App() {
   let products = [
         
@@ -20,71 +18,82 @@ function App() {
         name:'banana-pjs',
         description:'Banana Print Pajamas',
         price:'$20',
+        quantity:0,
     },
     {
         id:2,
         name:'collar-bow',
         description:'Bow Collar Accessory',
         price:'$4',
+        quantity:0,
+
     },
     {
         id:3,
         name:'winter-coat',
         description:'Winter Coat',
         price:'$20',
+        quantity:0,
+
     },
     {
         id:4,
         name:'chicken-toy',
         description:'Chicken Plush Chew Toy',
         price:'$7',
+        quantity:0,
+
     },
     {
         id:5,
         name:'elephant-toy',
         description:'Elephant Plush Chew Toy',
         price:'$7',
+        quantity:0,
+
     },
     {
         id:6,
         name:'food-toy-bundle',
         description:'Food Toy Bundle',
         price:'$12',
+        quantity:0,
+
     },
     {
         id:7,
         name:'dog-food',
         description:'Premium Organic Food',
         price:'$25',
+        quantity:0,
+
     },
     {
         id:8,
         name:'treats',
         description:'Treats Bundle',
         price:'$15',
+        quantity:0,
+
     },
     {
         id:9,
         name:'leash',
         description:'10ft Extender Leash',
         price:'$8',
+        quantity:0,
+
     },
 ]
 
-let initialCartItems = [
+let initialCartItems = 
+[
   {
     id:1,
     name:'banana-pjs',
     description:'Banana Print Pajamas',
     price:20,
     quantity: 2,
-  },
-  {
-    id:9,
-    name:'leash',
-    description:'10ft Extender Leash',
-    price:8,
-    quantity: 1,
   },
 ];
 
@@ -102,9 +111,18 @@ let initialCartItems = [
     document.body.classList.remove("stop-scrolling");
   }
 
-  function addToCart(){
-    console.log('add to cart!')
+  function addToCart(e){
+    let id = parseFloat(e.target.id)
+    let result = products.find(product => product.id === id)
+    console.log(result)
+    
+    setCartItems([...cartItems, result])
+    
+    console.log(cartItems, result)
   }
+
+
+
   return (
 
     <Router>
@@ -117,6 +135,11 @@ let initialCartItems = [
         </Routes>
         {cartOpen && <Cart clickOutsideOfCart={clickOutsideOfCart} cartItems={cartItems}/>}
       </div>
+      <div>lenth of cart items:{cartItems.length}</div>
+      <div>type:{typeof(initialCartItems)}</div>
+
+      <div>type:{typeof(cartItems)}</div>
+
     </Router>
     
 
