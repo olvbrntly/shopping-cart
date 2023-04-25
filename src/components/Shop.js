@@ -8,7 +8,7 @@ function Shop({addToCart, products}){
         <div className="product-container">
            {products.map(p =>(
             <div key={p.id}>
-                <Products description={p.description} price={p.price}  name={p.name} addToCart={addToCart}/>
+                <Products description={p.description} price={p.price}  name={p.name} id={p.id} addToCart={addToCart}/>
             </div>
            )
            )}
