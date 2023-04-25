@@ -5,7 +5,7 @@ import './Cart.css'
 function Cart({clickOutsideOfCart, cartItems}){
     
     return(
-    <div>
+    <div className="cart">
         <div className="other-part" onClick={clickOutsideOfCart}></div>
         <div className="cart-slide-out">
             <h1>Cart</h1>

@@ -94,10 +94,12 @@ let initialCartItems = [
   
   function onCartClick(){
     setCartOpen(!cartOpen);
+    document.body.classList.add("stop-scrolling");
   }
 
   function clickOutsideOfCart(){
     setCartOpen(false)
+    document.body.classList.remove("stop-scrolling");
   }
 
   function addToCart(){

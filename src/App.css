@@ -5,3 +5,8 @@
 body{
   background-color: rgb(102, 10, 10);
 }
+
+.stop-scrolling{
+  height:100%;
+  overflow:hidden;
+}
