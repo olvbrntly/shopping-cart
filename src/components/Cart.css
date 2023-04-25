@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    color: rgb(102, 10, 10);;
+    color: rgb(102, 10, 10);
     height:100%;
     z-index:9;
     width:30%;
@@ -27,15 +27,15 @@
 
 /* ----------Cart Items---------- */
 .cart-items-div{
-    border:1px solid black;
+    border:5px solid rgb(102, 10, 10);;
     height:400px;
     width:350px;
+    border-radius: 20px;
 }
 
 .cart-item{
     display:flex;
-    border:1px solid green;
-    padding:5px;
+    padding:10px;
 }
 
 .cart-item-img{
