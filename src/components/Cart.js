@@ -8,7 +8,7 @@ function Cart({clickOutsideOfCart, cartItems}){
     <div className="cart">
         <div className="other-part" onClick={clickOutsideOfCart}></div>
         <div className="cart-slide-out">
-            <h1>Cart</h1>
+            <h1>Your Cart</h1>
             {/* the div below will map ou the array of items that have been added to the cart (cartItem) */}
             <div className="cart-items-div">
                 <div className="cart-item">
