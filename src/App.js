@@ -114,11 +114,18 @@ let initialCartItems =
   function addToCart(e){
     let id = parseFloat(e.target.id)
     let result = products.find(product => product.id === id)
-    console.log(result)
+    let cartCheck = cartItems.find(item => item.id === id)
+    if(cartCheck === undefined){
+      setCartItems([...cartItems, result])
+    }else{
+      console.log('thats alrready there!')
+      console.log(cartItems, result)
+    }
+
+
+ 
     
-    setCartItems([...cartItems, result])
-    
-    console.log(cartItems, result)
+    //console.log(cartItems, result)
   }
 
 
