@@ -154,7 +154,7 @@ function App() {
       <div className="App">
         <Header onClick={onCartClick}/>
         <Routes>
-          <Route path="/" Component={Home}/>
+          <Route path="/shopping-cart" Component={Home}/>
           <Route path="/about" Component={About}/>
           <Route path="/shop" element={<Shop addToCart={addToCart} products={products} />}/>
         </Routes>
