@@ -128,7 +128,32 @@ let initialCartItems =
       });
       setCartItems(newState)
     }
- //console.log(cartItems, result)
+  }
+
+
+  function add(e){
+    let id = parseFloat(e.target.id)
+    const newState = cartItems.map(item => {
+      if (item.id === id) {
+        let q = item.quantity
+        return {...item, quantity : q +1}
+      }
+      return item;
+    });
+    setCartItems(newState)
+  }
+
+
+  function remove(e){
+    let id = parseFloat(e.target.id)
+    const newState = cartItems.map(item => {
+      if (item.id === id) {
+        let q = item.quantity
+        return {...item, quantity : q -1}
+      }
+      return item;
+    });
+    setCartItems(newState)
   }
 
 
@@ -143,7 +168,7 @@ let initialCartItems =
           <Route path="/about" Component={About}/>
           <Route path="/shop" element={<Shop addToCart={addToCart} products={products} />}/>
         </Routes>
-        {cartOpen && <Cart clickOutsideOfCart={clickOutsideOfCart} cartItems={cartItems}/>}
+        {cartOpen && <Cart clickOutsideOfCart={clickOutsideOfCart} cartItems={cartItems} remove={remove} add={add}/>}
       </div>
       <div>lenth of cart items:{cartItems.length}</div>
       <div>type:{typeof(initialCartItems)}</div>

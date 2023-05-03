@@ -2,7 +2,7 @@ import React from "react";
 import './Cart.css'
 
 
-function Cart({clickOutsideOfCart, cartItems}){
+function Cart({clickOutsideOfCart, cartItems, remove, add}){
     
     return(
     <div className="cart">
@@ -21,9 +21,9 @@ function Cart({clickOutsideOfCart, cartItems}){
                         <div>{c.description}</div>
                         <div className="cart-nums">
                             <div className="cart-quantity">
-                                <button>-</button>
+                                <button onClick={remove} id={c.id}>-</button>
                                 <div>{c.quantity}</div>
-                                <button>+</button>
+                                <button onClick={add} id={c.id}>+</button>
                             </div>
                             <div>${c.price * c.quantity}</div>
                         </div>
