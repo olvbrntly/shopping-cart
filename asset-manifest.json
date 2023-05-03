@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b122ffd.css",
-    "main.js": "/static/js/main.3a860558.js",
-    "static/media/collar-bow.jpg": "/static/media/collar-bow.916feec5ea9d8db5e3e0.jpg",
-    "static/media/Supplies.jpg": "/static/media/Supplies.05511c95b9e33d612b20.jpg",
-    "static/media/dog-food.jpg": "/static/media/dog-food.05511c95b9e33d612b20.jpg",
-    "static/media/puppy.png": "/static/media/puppy.be782e289d41a776fa48.png",
-    "static/media/treats.jpg": "/static/media/treats.a917dd2c06b4c075ca79.jpg",
-    "static/media/Apparel.jpg": "/static/media/Apparel.b08b08510685b0e0cd12.jpg",
-    "static/media/banana-pjs.jpg": "/static/media/banana-pjs.b08b08510685b0e0cd12.jpg",
-    "static/media/chicken-toy.jpg": "/static/media/chicken-toy.cb6a75199a3c8b3e5009.jpg",
-    "static/media/food-toy-bundle.jpg": "/static/media/food-toy-bundle.d9288a16e6773aef2570.jpg",
-    "static/media/Toys.jpg": "/static/media/Toys.b2db4a7c9fb57fe8e3df.jpg",
-    "static/media/elephant-toy.jpg": "/static/media/elephant-toy.b2db4a7c9fb57fe8e3df.jpg",
-    "static/media/leash.jpg": "/static/media/leash.bdc77c6b3584faf3de83.jpg",
-    "static/media/winter-coat.jpg": "/static/media/winter-coat.b130b76331d1cabaa981.jpg",
-    "static/media/Spumoni.otf": "/static/media/Spumoni.e10b66dad6e089654ceb.otf",
-    "index.html": "/index.html",
-    "main.1b122ffd.css.map": "/static/css/main.1b122ffd.css.map",
-    "main.3a860558.js.map": "/static/js/main.3a860558.js.map"
+    "main.css": "/shopping-cart/static/css/main.6066fdf4.css",
+    "main.js": "/shopping-cart/static/js/main.79a740a1.js",
+    "static/media/collar-bow.jpg": "/shopping-cart/static/media/collar-bow.916feec5ea9d8db5e3e0.jpg",
+    "static/media/Supplies.jpg": "/shopping-cart/static/media/Supplies.05511c95b9e33d612b20.jpg",
+    "static/media/dog-food.jpg": "/shopping-cart/static/media/dog-food.05511c95b9e33d612b20.jpg",
+    "static/media/puppy.png": "/shopping-cart/static/media/puppy.be782e289d41a776fa48.png",
+    "static/media/treats.jpg": "/shopping-cart/static/media/treats.a917dd2c06b4c075ca79.jpg",
+    "static/media/Apparel.jpg": "/shopping-cart/static/media/Apparel.b08b08510685b0e0cd12.jpg",
+    "static/media/banana-pjs.jpg": "/shopping-cart/static/media/banana-pjs.b08b08510685b0e0cd12.jpg",
+    "static/media/chicken-toy.jpg": "/shopping-cart/static/media/chicken-toy.cb6a75199a3c8b3e5009.jpg",
+    "static/media/food-toy-bundle.jpg": "/shopping-cart/static/media/food-toy-bundle.d9288a16e6773aef2570.jpg",
+    "static/media/Toys.jpg": "/shopping-cart/static/media/Toys.b2db4a7c9fb57fe8e3df.jpg",
+    "static/media/elephant-toy.jpg": "/shopping-cart/static/media/elephant-toy.b2db4a7c9fb57fe8e3df.jpg",
+    "static/media/leash.jpg": "/shopping-cart/static/media/leash.bdc77c6b3584faf3de83.jpg",
+    "static/media/winter-coat.jpg": "/shopping-cart/static/media/winter-coat.b130b76331d1cabaa981.jpg",
+    "static/media/Spumoni.otf": "/shopping-cart/static/media/Spumoni.e10b66dad6e089654ceb.otf",
+    "index.html": "/shopping-cart/index.html",
+    "main.6066fdf4.css.map": "/shopping-cart/static/css/main.6066fdf4.css.map",
+    "main.79a740a1.js.map": "/shopping-cart/static/js/main.79a740a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b122ffd.css",
-    "static/js/main.3a860558.js"
+    "static/css/main.6066fdf4.css",
+    "static/js/main.79a740a1.js"
   ]
 }
