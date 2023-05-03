@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
@@ -17,14 +17,14 @@ function App() {
         id:1,
         name:'banana-pjs',
         description:'Banana Print Pajamas',
-        price:'$20',
+        price:20,
         quantity:0,
     },
     {
         id:2,
         name:'collar-bow',
         description:'Bow Collar Accessory',
-        price:'$4',
+        price:4,
         quantity:0,
 
     },
@@ -32,7 +32,7 @@ function App() {
         id:3,
         name:'winter-coat',
         description:'Winter Coat',
-        price:'$20',
+        price:20,
         quantity:0,
 
     },
@@ -40,7 +40,7 @@ function App() {
         id:4,
         name:'chicken-toy',
         description:'Chicken Plush Chew Toy',
-        price:'$7',
+        price:7,
         quantity:0,
 
     },
@@ -48,7 +48,7 @@ function App() {
         id:5,
         name:'elephant-toy',
         description:'Elephant Plush Chew Toy',
-        price:'$7',
+        price:7,
         quantity:0,
 
     },
@@ -56,7 +56,7 @@ function App() {
         id:6,
         name:'food-toy-bundle',
         description:'Food Toy Bundle',
-        price:'$12',
+        price:12,
         quantity:0,
 
     },
@@ -64,7 +64,7 @@ function App() {
         id:7,
         name:'dog-food',
         description:'Premium Organic Food',
-        price:'$25',
+        price:25,
         quantity:0,
 
     },
@@ -72,7 +72,7 @@ function App() {
         id:8,
         name:'treats',
         description:'Treats Bundle',
-        price:'$15',
+        price:15,
         quantity:0,
 
     },
@@ -80,26 +80,16 @@ function App() {
         id:9,
         name:'leash',
         description:'10ft Extender Leash',
-        price:'$8',
+        price:8,
         quantity:0,
 
     },
 ]
 
-let initialCartItems = 
-[
-  {
-    id:1,
-    name:'banana-pjs',
-    description:'Banana Print Pajamas',
-    price:20,
-    quantity: 2,
-  },
-];
-
 
   const [cartOpen, setCartOpen] = useState(false)
-  const [cartItems, setCartItems] = useState(initialCartItems)
+  const [cartItems, setCartItems] = useState([])
+
   
   function onCartClick(){
     setCartOpen(!cartOpen);
@@ -141,8 +131,8 @@ let initialCartItems =
       return item;
     });
     setCartItems(newState)
-  }
 
+  }
 
   function remove(e){
     let id = parseFloat(e.target.id)
@@ -153,9 +143,10 @@ let initialCartItems =
       }
       return item;
     });
-    setCartItems(newState)
+    const filteredNewState = newState.filter(item => item.quantity >0)
+    setCartItems(filteredNewState)
+  
   }
-
 
 
   return (
@@ -168,12 +159,8 @@ let initialCartItems =
           <Route path="/about" Component={About}/>
           <Route path="/shop" element={<Shop addToCart={addToCart} products={products} />}/>
         </Routes>
-        {cartOpen && <Cart clickOutsideOfCart={clickOutsideOfCart} cartItems={cartItems} remove={remove} add={add}/>}
+        {cartOpen && <Cart clickOutsideOfCart={clickOutsideOfCart} cartItems={cartItems} remove={remove} add={add} />}
       </div>
-      <div>lenth of cart items:{cartItems.length}</div>
-      <div>type:{typeof(initialCartItems)}</div>
-
-      <div>type:{typeof(cartItems)}</div>
 
     </Router>
     
