@@ -116,16 +116,19 @@ let initialCartItems =
     let result = products.find(product => product.id === id)
     let cartCheck = cartItems.find(item => item.id === id)
     if(cartCheck === undefined){
+      result.quantity = result.quantity + 1
       setCartItems([...cartItems, result])
     }else{
-      console.log('thats alrready there!')
-      console.log(cartItems, result)
+      const newState = cartItems.map(item => {
+        if (item.id === id) {
+          let q = item.quantity
+          return {...item, quantity : q + 1}
+        }
+        return item;
+      });
+      setCartItems(newState)
     }
-
-
- 
-    
-    //console.log(cartItems, result)
+ //console.log(cartItems, result)
   }
 
 
