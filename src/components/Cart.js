@@ -2,7 +2,7 @@ import React from "react";
 import './Cart.css'
 
 
-function Cart({clickOutsideOfCart, cartItems, remove, add}){
+function Cart({clickOutsideOfCart, cartItems, remove, add, price}){
     
     return(
     <div className="cart">
@@ -13,9 +13,9 @@ function Cart({clickOutsideOfCart, cartItems, remove, add}){
             <div className="cart-items-div">
                 {cartItems.map(c =>(
                   <div className="cart-item" key={c.id}>
-                    <div className="cart-item-img">image</div>  
+                    {/* <div className="cart-item-img">image</div>   */}
                     
-                    {/* <img className="cart-item-img" src={require(`./shop_components/products_images/${c.name}.jpg`)} alt={c.name}/> */}
+                    <img className="cart-item-img" src={require(`./shop_components/products_images/${c.name}.jpg`)} alt={c.name}/>
 
                     <div className="cart-item-info">
                         <div>{c.description}</div>
@@ -32,8 +32,8 @@ function Cart({clickOutsideOfCart, cartItems, remove, add}){
                     </div>  
                 ))}
             </div>
-            <div>will display total price</div>
-            <button>Checkout!</button>
+            <div className="cart-total"> Total: ${cartItems.reduce((total, item)=> total + (item.quantity * item.price),0)}</div>
+            <button className="check-out-btn">Checkout!</button>
         </div>
     </div>
 
