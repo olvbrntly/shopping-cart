@@ -11,23 +11,26 @@ function Cart({clickOutsideOfCart, cartItems}){
             <h1>Your Cart</h1>
             {/* the div below will map ou the array of items that have been added to the cart (cartItem) */}
             <div className="cart-items-div">
-                <div className="cart-item">
-                    
+                {cartItems.map(c =>(
+                  <div className="cart-item" key={c.id}>
                     <div className="cart-item-img">image</div>  
+                    
+                    {/* <img className="cart-item-img" src={require(`./shop_components/products_images/${c.name}.jpg`)} alt={c.name}/> */}
 
                     <div className="cart-item-info">
-                        <div>{cartItems[0].description}</div>
+                        <div>{c.description}</div>
                         <div className="cart-nums">
                             <div className="cart-quantity">
                                 <button>-</button>
-                                <div>{cartItems[0].quantity}</div>
+                                <div>{c.quantity}</div>
                                 <button>+</button>
                             </div>
-                            <div>${cartItems[0].price * cartItems[0].quantity}</div>
+                            <div>${c.price * c.quantity}</div>
                         </div>
                     </div>
 
-                </div>
+                    </div>  
+                ))}
             </div>
             <div>will display total price</div>
             <button>Checkout!</button>
