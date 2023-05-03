@@ -10,7 +10,7 @@ function Products({description, price, name, id,  addToCart}){
          
             <div className="product-info">
                 <p> {description}</p>
-                <p>{price}</p>
+                <p>${price}</p>
             </div>
             <button className="add-to-cart"  id={id} onClick={addToCart}>Add to Cart</button>
 
