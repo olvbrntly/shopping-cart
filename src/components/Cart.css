@@ -27,11 +27,12 @@
 
 /* ----------Cart Items---------- */
 .cart-items-div{
-    border:5px solid rgb(102, 10, 10);;
+    background-color: rgb(102, 10, 10);
     height:400px;
-    width:350px;
+    width:95%;
     border-radius: 20px;
-    overflow: scroll;
+    overflow: auto;
+    color:whitesmoke
 }
 
 .cart-item{
@@ -44,6 +45,7 @@
     height:100px;
     background-color: red;
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 .cart-item-info{
@@ -61,4 +63,33 @@
 .cart-quantity{
     display:flex;
     gap:5px;
+}
+
+.cart-total{
+    font-size:25px;
+    font-weight:700;
+    width:100%;
+    text-align:right;
+    margin-right:25px;
+    margin-bottom: 50px;
+
+}
+
+.check-out-btn{
+    font-size:30px;
+    color:whitesmoke;
+    background-color: rgb(102, 10, 10);
+    border:none;
+    padding:10px;
+    border-radius: 10px;;
+}
+
+.check-out-btn:hover {
+    background-color: rgb(102, 10, 10);
+}
+
+.check-out-btn:active {
+  background-color: rgb(102, 10, 10);
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
